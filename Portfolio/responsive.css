@@ -171,6 +171,8 @@
     padding: 2px 0px;
     transition: all ease 0.3s;
   }
+
+  
   .mobile-nav li a:active {
     color: rgb(8, 121, 182);
     font-size: 1.02rem;
