@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snek-io</title>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAzU7-7jNs4qgB2OEPFvG-JA1D8TZ9C34g",
+            authDomain: "snakegame-87093.firebaseapp.com",
+            projectId: "snakegame-87093",
+            databaseURL: "https://snakegame-87093-default-rtdb.asia-southeast1.firebasedatabase.app",
+            storageBucket: "snakegame-87093.appspot.com",
+            messagingSenderId: "899875887011",
+            appId: "1:899875887011:web:68eff1640512a86803ec16",
+            measurementId: "G-R08KV0GHQP"
+        };
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/res/snake.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <table id="table">
+                <thead>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </thead>
+            </table>
+        </div>
+        <div class="score">Score:0</div>
+        <div class="hiscore">HighScore:0</div>
+        <div id="canvas">
+        </div>
+        <div class="controls">
+            <div id="left" class="btn">V</div>
+            <div class="center">
+                <div id="up" class="btn">V</div>
+                <div id="down" class="btn">V</div>
+            </div>
+            <div id="right" class="btn">V</div>
+            
+        </div>
+    </div>
+</body>
+</html>
